@@ -1,0 +1,26 @@
+$baseFontSize: 18px;
+$containerWidth: 940px;
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+@import 'normalize.scss';
+@import 'blocks/media.scss';
+@import 'blocks/base.scss';
+@import 'blocks/header.scss';
+@import 'blocks/section.scss';
+@import 'blocks/hello.scss';
+@import 'blocks/benefits.scss';
+@import 'blocks/headline.scss';
+@import 'blocks/rewiews.scss';
+@import 'blocks/interactive__users.scss';
+@import 'blocks/form.scss';
+@import 'blocks/fixed__menu.scss';
+@import 'blocks/buttons.scss';
+@import 'blocks/features.scss';
+@import 'blocks/button.scss';
+@import 'blocks/logo.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/hamburger.scss';
+@import 'blocks/map.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/sosials.scss';
