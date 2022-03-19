@@ -6,4 +6,25 @@
     bottom: 0;
     right: 0;
     font-size: rem(24px);
+    display: flex;
+    @include phone {
+        flex-direction: column;
+    }
+}
+
+.footer__col {
+    display: flex;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__col--align--right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }

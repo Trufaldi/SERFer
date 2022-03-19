@@ -1,6 +1,7 @@
 .benefits__list {
     display: flex;
     @include phone {
+        display: flex;
         flex-direction: column;
     }
 }
@@ -12,7 +13,10 @@
 .benefits__item {
     position: relative;
     flex: 1;
-    margin: 0 2, 1%;
+    margin: 0 2.1%;
+    @include phone {
+        margin: 0;
+    }
     &:before {
         content: url("../../img/Combined shape 2204.png");
         position: absolute;
@@ -46,7 +50,7 @@
     margin-bottom: rem(20px);
 }
 
-.benefits__item-img {
+.benefit__icon {
     width: rem(68px);
     height: rem(68px);
     position: absolute;

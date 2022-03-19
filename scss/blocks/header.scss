@@ -4,6 +4,16 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: rem(103px);
+    @include tablets {
+        position: absolute;
+        background: #1968B1;
+        padding: 24px 10px 27px 10px;
+        left: 0;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .menu {

@@ -10,6 +10,9 @@ form {
         flex-direction: column;
         padding: 0 19%;
     }
+    @include phone {
+        padding: 0;
+    }
 }
 
 .form__col {
@@ -57,7 +60,6 @@ form {
     }
     &:focus {
         outline-color: #FEDB3F;
-        outline: none;
     }
 }
 
@@ -65,6 +67,10 @@ form {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 18px;
+    @include phone {
+        justify-content: center;
+        margin-bottom: rem(23px);
+    }
 }
 
 .form__controls-group {

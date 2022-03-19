@@ -397,6 +397,22 @@ li {
           align-items: flex-start;
   margin-bottom: 5.7222222222rem;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    position: absolute;
+    background: #1968B1;
+    padding: 24px 10px 27px 10px;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .menu {
   margin-right: 2.6111111111rem;
@@ -604,6 +620,9 @@ li {
 }
 @media screen and (max-width: 480px) {
   .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -620,8 +639,13 @@ li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin: 0 2, 1%;
+  margin: 0 2.1%;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    margin: 0;
+  }
 }
 .benefits__item:before {
   content: url("../../img/Combined shape 2204.png");
@@ -657,7 +681,7 @@ li {
   margin-bottom: 1.1111111111rem;
 }
 
-.benefits__item-img {
+.benefit__icon {
   width: 3.7777777778rem;
   height: 3.7777777778rem;
   position: absolute;
@@ -841,6 +865,11 @@ form {
     padding: 0 19%;
   }
 }
+@media screen and (max-width: 480px) {
+  form {
+    padding: 0;
+  }
+}
 
 .form__col {
   -webkit-box-flex: 1;
@@ -896,7 +925,6 @@ form {
 }
 .form__input:focus {
   outline-color: #FEDB3F;
-  outline: none;
 }
 
 .form__controls {
@@ -906,6 +934,14 @@ form {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 18px;
+}
+@media screen and (max-width: 480px) {
+  .form__controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1.2777777778rem;
+  }
 }
 
 .form__controls-group {
@@ -1029,7 +1065,7 @@ form {
   margin-right: 0;
 }
 
-.list__feature-img {
+.feature__icon {
   width: 2.2777777778rem;
   height: 2.2777777778rem;
   margin-right: 0.6111111111rem;
@@ -1144,5 +1180,68 @@ form {
   bottom: 0;
   right: 0;
   font-size: 1.3333333333rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__col--align--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: #B3B3B3;
+}
+
+.socials__icon:hover {
+  fill: black;
+}
+
+.phone__icon {
+  width: 12px;
+  height: 12px;
+}
+
+.feature__icon {
+  fill: white;
 }
 /*# sourceMappingURL=main.css.map */
