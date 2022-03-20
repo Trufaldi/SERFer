@@ -14,11 +14,16 @@
     position: relative;
     flex: 1;
     margin: 0 2.1%;
+    text-align: center;
     @include phone {
         margin: 0;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        margin-bottom: rem(20px);
     }
     &:before {
-        content: url("../../img/Combined shape 2204.png");
+        content: url("../img/Combined shape 2204.png");
         position: absolute;
         top: rem(30px);
         right: 0;
@@ -36,7 +41,6 @@
             display: none;
         }
     }
-    text-align: center;
 }
 
 .benefits__img {
@@ -48,6 +52,12 @@
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: rem(20px);
+    @include tablets {
+        margin-bottom: rem(16px);
+    }
+    @include phone {
+        flex-shrink: 0;
+    }
 }
 
 .benefit__icon {
@@ -67,4 +77,25 @@
 
 .benefits__headline {
     margin-bottom: rem(50px);
+    @include phone {
+        margin-bottom: rem(37px);
+    }
+}
+
+.benefits__title {
+    font-size: rem(27px);
+    font-weight: bold;
+    margin-bottom: rem(20px);
+    @include tablets {
+        margin-bottom: rem(10px);
+    }
+    @include phone {
+        margin-bottom: 10px;
+    }
+}
+
+.benefits__text-wrap {
+    @include phone {
+        padding-left: 12px;
+    }
 }

@@ -6,6 +6,10 @@
     border-radius: rem(100px);
     background: #FEDB3F;
     border: none;
+    @include phone {
+        font-size: rem(19px);
+        padding: rem(18px) rem(36px);
+    }
 }
 
 .button--theme--yellow {

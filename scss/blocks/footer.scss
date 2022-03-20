@@ -5,8 +5,18 @@
     left: 0;
     bottom: 0;
     right: 0;
-    font-size: rem(24px);
+    font-size: rem(21px);
+    line-height: rem(24px);
     display: flex;
+    @include phone {
+        flex-direction: column;
+    }
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     @include phone {
         flex-direction: column;
     }
@@ -20,11 +30,24 @@
 .socials {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+.socials__item {
+    margin-right: rem(14px);
+}
+
+.socials__item:last-child {
+    margin-right: 0;
 }
 
 .footer__col--align--right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.footer__telephone {
+    @include tablets {
+        display: block;
+    }
 }

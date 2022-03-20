@@ -11,6 +11,10 @@
     font-weight: bold;
     margin-bottom: rem(53px);
     text-align: center;
+    @include phone {
+        font-size: rem(40px);
+        line-height: rem(36px);
+    }
 }
 
 .title__text .forms--color--white {
@@ -21,4 +25,10 @@
     padding: 0 25%;
     font-size: rem(18px);
     line-height: rem(21px);
+    @include tablets {
+        padding: 0 19%;
+    }
+    @include phone {
+        padding: 0 3%;
+    }
 }

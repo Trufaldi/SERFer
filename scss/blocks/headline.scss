@@ -10,8 +10,8 @@
     text-align: center;
 }
 
-.benefits__title {
-    font-size: rem(27px);
-    font-weight: bold;
-    margin-bottom: rem(20px);
+.headline__subtitle {
+    @include phone {
+        line-height: rem(21.6px);
+    }
 }

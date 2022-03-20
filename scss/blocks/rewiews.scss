@@ -7,6 +7,8 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
+        padding: rem(57px) rem(10px) rem(46px) rem(10px);
+        margin-bottom: rem(31px);
     }
 }
 
@@ -30,6 +32,9 @@
     flex: 1;
     margin-left: rem(35px);
     padding-top: rem(28px);
+    @include tablets {
+        margin-left: 0;
+    }
 }
 
 .rewiew__title {
@@ -43,6 +48,9 @@
     color: #666666;
     line-height: rem(22px);
     margin-bottom: rem(25px);
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
 }
 
 .rewiew__signature {

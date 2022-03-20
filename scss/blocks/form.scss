@@ -31,6 +31,9 @@ form {
     margin-bottom: rem(13px);
     &--comment {
         margin-bottom: rem(38px);
+        @include tablets {
+            margin-bottom: rem(24px);
+        }
     }
 }
 
@@ -57,9 +60,15 @@ form {
         height: rem(152px);
         resize: none;
         display: block;
+        @include tablets {
+            height: rem(82px);
+        }
     }
     &:focus {
         outline-color: #FEDB3F;
+    }
+    @include tablets {
+        padding: rem(8px) rem(10px);
     }
 }
 
@@ -121,6 +130,9 @@ form {
 
 .title__header--forms-main-title {
     margin-bottom: rem(60px);
+    @include tablets {
+        margin-bottom: rem(30px);
+    }
 }
 
 .radio--checkbox {

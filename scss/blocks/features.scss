@@ -1,7 +1,7 @@
 .features__list {
     display: flex;
     margin-bottom: rem(65px);
-    @include phone {
+    @include tablets {
         display: none;
     }
 }
