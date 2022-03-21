@@ -8,6 +8,9 @@
 
 .benefits__main-title {
     margin-bottom: rem(17px);
+    @include phone {
+        margin-bottom: rem(10px);
+    }
 }
 
 .benefits__item {
@@ -21,6 +24,8 @@
         text-align: left;
         align-items: center;
         margin-bottom: rem(20px);
+        align-items: flex-start;
+        padding-top: rem(4px);
     }
     &:before {
         content: url("../img/Combined shape 2204.png");
@@ -78,7 +83,7 @@
 .benefits__headline {
     margin-bottom: rem(50px);
     @include phone {
-        margin-bottom: rem(37px);
+        margin-bottom: rem(56px);
     }
 }
 

@@ -8,6 +8,9 @@
     font-size: rem(21px);
     line-height: rem(24px);
     display: flex;
+    @include tablets {
+        padding: rem(18px) rem(12px);
+    }
     @include phone {
         flex-direction: column;
     }
