@@ -1,0 +1,117 @@
+.product-section {
+    background: #f8faf9;
+}
+
+.product__item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.product__img {
+    flex: 1;
+    width: rem(150px);
+    height: rem(535px);
+    margin-bottom: rem(80px);
+    position: relative;
+    &:after {
+        content: '';
+        background: url("../img/drop.png");
+        position: absolute;
+        top: rem(30px);
+        right: 0;
+        transform: translate(76%, 105%);
+        width: rem(396px);
+        height: rem(378px);
+    }
+}
+
+.product__item-information {
+    flex: 1;
+}
+
+.product__headline {
+    font-size: rem(36px);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: rem(24px);
+}
+
+.product__text {
+    color: #666666;
+    margin-bottom: rem(24px);
+    height: 110px;
+    width: rem(368px);
+    height: rem(110px)
+}
+
+.parameter-name {
+    width: rem(91px);
+    height: rem(91px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #3A587E;
+    border-radius: rem(4px);
+    padding: rem(17px) rem(26px) rem(12px) rem(27px);
+    margin-bottom: 52px;
+}
+
+.parameter-icon {
+    width: rem(38px);
+    height: rem(38px);
+    margin-bottom: rem(7px);
+}
+
+.parameter__title {
+    font-size: rem(14px);
+    font-weight: bold;
+    color: white;
+}
+
+.product__characteristics {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: rem(21px);
+}
+
+.product__characteristic--left {
+    margin-right: rem(52px);
+}
+
+.product__characteristic--value {
+    font-weight: bold;
+}
+
+.order-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.order__price {
+    font-size: rem(60px);
+    margin-right: rem(63px);
+}
+
+.product-slider__arrows {
+    display: flex;
+    position: relative;
+}
+
+.product-slider__arrow {
+    position: absolute;
+}
+
+.product-slider__arrow--left {
+    align-content: flex-start;
+}
+
+.product-slider__arrow--right {
+    align-content: flex-end;
+}
