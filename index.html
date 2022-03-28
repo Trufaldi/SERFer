@@ -140,7 +140,7 @@
         </section>
         <section class="section product-section">
             <div class="container">
-                <div class="product-slider">
+                <div class="product__slider">
                     <div class="product-slider__arrows">
                         <a href="#" class="product-slider__arrow product-slider__arrow--left">
                             <img src="./img/left.svg" alt="" class="arrow-img">
@@ -150,16 +150,55 @@
                         </a>
                     </div>
                     <ul class="products">
-                        <li class="product__item">
+                        <li class="product">
                             <div class="product__img">
-                                <img src="./img/serf.png" alt="" class="product__img-">
+                                <img src="./img/serf.png" alt="" class="product__img-pic">
                             </div>
                             <div class="product__item-information">           
                                 <div class="product__parameters">
                                 
-                                <div class="parameter-name">
-                                    <img src="./img/crest.png" alt="" class="parameter-icon">
+                                <div class="parameter">
+                                    <div class="parameter__button">
+                                    <img src="./img/crest.png" alt="" class="parameter__button-icon">
                                    <div class="parameter__title"> ПАРАМЕТРЫ </div>
+                                    </div>
+                                    <ul class="parameter__list">
+                                        <li class="parameter__item">
+                                            <svg class="parameter__icon">
+                                                <use xlink:href="./sprite.svg#lenght"></use>
+                                            </svg>
+                                            <div class="parameter__text">Длина доски</div>
+                                            <div class="parameter__info">от 2,5 м</div>
+                                        </li>
+                                        <li class="parameter__item">
+                                            <svg class="parameter__icon">
+                                                <use xlink:href="./sprite.svg#width"></use>
+                                            </svg>
+                                            <div class="parameter__text">Ширина доски</div>
+                                            <div class="parameter__info">от 40 см</div>
+                                        </li>
+                                        <li class="parameter__item">
+                                            <svg class="parameter__icon">
+                                                <use xlink:href="./sprite.svg#thickness"></use>
+                                            </svg>
+                                            <div class="parameter__text">Толщина</div>
+                                            <div class="parameter__info">8 см</div>
+                                        </li>
+                                        <li class="parameter__item">
+                                            <svg class="parameter__icon">
+                                                <use xlink:href="./sprite.svg#time"></use>
+                                            </svg>
+                                            <div class="parameter__text">Срок службы</div>
+                                            <div class="parameter__info">5 лет</div>
+                                        </li>
+                                        <li class="parameter__item">
+                                            <svg class="parameter__icon">
+                                                <use xlink:href="./sprite.svg#weight"></use>
+                                            </svg>
+                                            <div class="parameter__text">Вес </div>
+                                            <div class="parameter__info">7-8 кг</div>
+                                        </li>
+                                    </ul>
                                 </div>
                             
                         
@@ -169,13 +208,13 @@
                              </p>
                             </div>
                             <div class="product__characteristics">
-                                <div class="product__characteristic--left">
-                                    <div class="product__characteristic">Длина доски</div>
-                                   <div class="product__characteristic--value">от 2,5 метров</div> 
+                                <div class="product__characteristic">
+                                    <div class="product__characteristic-item">Длина доски</div>
+                                   <div class="product__characteristic-value">от 2,5 метров</div> 
                                 </div>
-                                <div class="product__characteristic--right">
+                                <div class="product__characteristic">
                                     <div class="product__characteristic">Ширина доски</div>
-                                    <div class="product__characteristic--value"> от 40 сантиметров </div>
+                                    <div class="product__characteristic-value"> от 40 сантиметров </div>
                                 </div>
                             </div>
                             <div class="order-block">
@@ -184,7 +223,7 @@
                                 </div>
                                 <button type="button" class="button">Заказать</button>
                             </div>
-                            </div>
+                        </div>
                         </li>
                     </ul>
                 </div>
@@ -400,5 +439,6 @@
         </ul>
     </nav>
 </body>
+<script src="js/hamburger.js"></script>
 
 </html>
