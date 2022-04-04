@@ -840,6 +840,8 @@ li {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0.8888888889rem;
+  position: absolute;
+  opacity: 0;
 }
 @media screen and (max-width: 768px) {
   .user__rewiew {
@@ -854,6 +856,11 @@ li {
     padding: 3.1666666667rem 0.5555555556rem 2.5555555556rem 0.5555555556rem;
     margin-bottom: 1.7222222222rem;
   }
+}
+
+.user__rewiew--active {
+  position: static;
+  opacity: 1;
 }
 
 .rewiew__avatar {
@@ -1148,6 +1155,10 @@ form {
 }
 .radio--checkbox .radio__visible:before {
   background: url(../img/checkmark.png) center center/0.5555555556rem no-repeat;
+}
+
+.input-error {
+  border: hotpink;
 }
 
 .fixed-menu {
@@ -1517,6 +1528,13 @@ form {
   }
 }
 
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .product__img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1755,7 +1773,7 @@ form {
 
 .order__price {
   font-size: 3.3333333333rem;
-  margin-right: 3.5rem;
+  margin-right: 2.4444444444rem;
 }
 @media screen and (max-width: 768px) {
   .order__price {
@@ -1810,5 +1828,124 @@ form {
   .product-slider__arrow--right {
     right: 0;
   }
+}
+
+.command__team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.command__person-photo {
+  width: 12.2222222222rem;
+  height: 16.1111111111rem;
+  margin-bottom: 1.1666666667rem;
+}
+
+.command__person {
+  margin-right: 1.1111111111rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.command__person:last-child {
+  margin-right: 0;
+}
+
+.command__person-name {
+  font-weight: bold;
+  font-size: 1.1666666667rem;
+  margin-bottom: 0.4444444444rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  border: none;
+}
+.command__person-name:after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background: url(../img/symbol.png) center center/cover no-repeat;
+  margin-left: 0.2222222222rem;
+}
+
+.command__person-specification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.command__person-block {
+  position: absolute;
+  top: 100%;
+}
+
+.command__person-proffe {
+  margin-bottom: 0.2222222222rem;
+}
+
+.command__person-description {
+  text-align: center;
+  color: #666666;
+}
+
+.command__team--mobile {
+  display: none;
+}
+
+.command__person-block {
+  text-align: center;
+}
+
+.modal {
+  background: #313131;
+}
+
+.modal__container {
+  background: white;
+  padding: 37px 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 1rem;
+}
+
+.button {
+  border: none;
+  display: inline-block;
 }
 /*# sourceMappingURL=main.css.map */

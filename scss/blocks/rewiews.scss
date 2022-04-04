@@ -3,6 +3,8 @@
     padding: rem(42px) rem(142px) rem(42px) rem(42px);
     display: flex;
     margin-bottom: rem(16px);
+    position: absolute;
+    opacity: 0;
     @include tablets {
         flex-direction: column;
         text-align: center;
@@ -10,6 +12,11 @@
         padding: rem(57px) rem(10px) rem(46px) rem(10px);
         margin-bottom: rem(31px);
     }
+}
+
+.user__rewiew--active {
+    position: static;
+    opacity: 1;
 }
 
 .rewiew__avatar {

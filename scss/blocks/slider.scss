@@ -15,6 +15,12 @@
         }
     }
     
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    
     .product__img {
         flex: 1;
         width: rem(420px);
@@ -206,7 +212,7 @@
     
     .order__price {
         font-size: rem(60px);
-        margin-right: rem(63px);
+        margin-right: rem(44px);
         @include tablets {
             margin-right: rem(32px);
         }
