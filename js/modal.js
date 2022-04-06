@@ -1,9 +1,9 @@
 const validateFields = (form, fieldsArray) => {
 
     fieldsArray.forEach(field => {
-        field.removeClass(".input-error");
+        field.removeClass("input-error");
         if (field.val().trim() === "") {
-            field.addClass(".input-error");
+            field.addClass("input-error");
         }
     });
 
@@ -12,52 +12,70 @@ const validateFields = (form, fieldsArray) => {
 }
 
 $(".form").submit(e => {
-    e.preventDefault();
+            e.preventDefault();
 
-    const form = $(e.currentTarget);
-    const name = form.find("[name='name']");
-    const phone = form.find("[name='phone']");
-    const street = form.find("[name='street']");
-    const comment = form.find("[name='comment']");
-    const to = form.find("[name='to']");
+            const form = $(e.currentTarget);
+            const name = form.find("[name='name']");
+            const phone = form.find("[name='phone']");
+            const street = form.find("[name='street']");
+            const comment = form.find("[name='comment']");
+            const to = form.find("[name='to']");
 
-    const isValid = validateFields(form, [name, phone, street, comment, to]);
+            const modal = $("modal");
+            const content = modal.find(".modal__content");
 
-    // !!!![name, phone, street, comment, to].forEach(field => {
-    //     field.removeClass(".input-error");
-    //     if (field.val().trim() === "") {
-    //         field.addClass(".input-error");
-    //     }
-    // });
+            modal.removeClass("modal-error");
 
-    // const errorFields = form.find(".input-error");
 
-    if (isValid) {
-        $.ajax({
-            url: "https://webdev-api.loftschool.com/sendmail",
-            method: "post",
-            data: {
-                name: name.val(),
-                phomne: phone.val(),
-                comment: comment.val(),
-                to: to.val(),
+            const isValid = validateFields(form, [name, phone, street, comment, to]);
+
+            // !!!![name, phone, street, comment, to].forEach(field => {
+            //     field.removeClass("input-error");
+            //     if (field.val().trim() === "") {
+            //         field.addClass("input-error");
+            //     }
+            // });
+
+            // const errorFields = form.find(".input-error");
+
+            if (isValid) {
+                const request = $.ajax({
+                    url: "https://webdev-api.loftschool.com/sendmail",
+                    method: "post",
+                    data: {
+                        name: name.val(),
+                        phomne: phone.val(),
+                        comment: comment.val(),
+                        to: to.val(),
+                    },
+                    success: data => {
+                        content.text(data.message)
+                            // console.log(data);
+                    },
+                    error: data => {
+                        const message = data.responseJSON.message;
+                        content.text(message);
+                        console.log(data);
+                        modal.addClass("modal-error");
+                        $.fancybox.open({
+                            src: '#modal',
+                            type: 'inline'
+                        });
+                    }
+                });
+
+
             }
-            success: data => {
-                console.log(data);
-            }
-        });
-    }
+            // {} -это объект
 
+            request.done((data) => {
 
+                }
 
-    $.fancybox.open({
-        src: '#modal',
-        type: 'inline'
-    })
-});
+            });
 
-$(".app-submit-button").click(e => {
-    e.preventDefault();
+        $(".app-submit-button").click(e => {
+            e.preventDefault();
 
-    $.fancybox.close();
-})
+            $.fancybox.close();
+        })

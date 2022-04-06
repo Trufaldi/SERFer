@@ -12,8 +12,7 @@ const openItem = item => {
 
 const closeEveryItem = container => {
     const items = container.find('.command__person-specification');
-    const itemContainer = container.find(".team__item");
-
+    const itemContainer = container.find(".command__person");
     itemContainer.removeClass("active");
     items.height(0);
 }

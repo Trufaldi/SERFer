@@ -442,39 +442,54 @@
                         </div>
                         <button class="command__person-name" type="button">Борис Федорович</button>
                         <div class="command__person-specification"> 
+                            <div class="command__person-block">
                             <div class="command__person-proffe">Спортсмен</div>
                             <div class="command__person-description">Участвует в разработке серфбордов</div>
+                            </div>
                         </div>     
                     </li>
                     <li class="command__person">
+                        <div class="command__person-block">
                         <div class="command__person-photo">
                         <img src="img/olga.png" alt="" class="command__person-pic">
                         </div>
+                    </div>
                         <button class="command__person-name" type="button">Ольга Невзорова</button>
                         <div class="command__person-specification"> 
+                            <div class="command__person-block">
                             <div class="command__person-proffe">Спортсмен</div>
                             <div class="command__person-description">Участвует в разработке серфбордов</div>
+                            </div>
                         </div>     
                     </li>
                     <li class="command__person">
+                        <div class="command__person-block">
                         <div class="command__person-photo">
                         <img src="img/ivar.png" alt="" class="command__person-pic">
                         </div>
+                        </div>
                         <button class="command__person-name" type="button">Ивар Нильсон</button>
                         <div class="command__person-specification"> 
+                            <div class="command__person-block">
                             <div class="command__person-proffe">Спортсмен</div>
                             <div class="command__person-description">Участвует в разработке серфбордов</div>
+                            </div>
                         </div>     
                     </li>
                     <li class="command__person">
+                        <div class="command__person-block">
                         <div class="command__person-photo">
                         <img src="img/katya.png" alt="" class="command__person-pic">
                         </div>
+                         </div>
                         <button class="command__person-name" type="button">Екатерина Иванова</button>
-                        <div class="command__person-specification"> 
+                        <div class="command__person-specification">
+                            <div class="command__person-block">
                             <div class="command__person-proffe">Спортсмен</div>
                             <div class="command__person-description">Участвует в разработке серфбордов</div>
+                            </div>
                         </div>     
+                    </li>
                     </li>
                 </ul>
             </div>
@@ -568,11 +583,11 @@
                     <div class="form__row">
                         <label class="form__block">
                             <div class="form__title">Имя</div>
-                            <input type="text" name="name" class="form__input input-error">
+                            <input type="text" name="name" class="form__input">
                         </label>
                         <label class="form__block">
                             <div class="form__title">Телефон</div>
-                            <input type="text" name="phone" class="form__input input-error">
+                            <input type="text" name="phone" class="form__input">
                         </label>
                     </div>
                     <div class="form__row">
@@ -584,22 +599,22 @@
                     <div class="form__row">
                         <label class="form__block">
                             <div class="form__title">Дом</div>
-                            <input type="text" name="house" class="form__input input-error">
+                            <input type="text" name="house" class="form__input">
                         </label>
                         
                             <label class="form__block">
                                 <div class="form__title">Корпус</div>
-                                <input type="text" class="form__input input-error">
+                                <input type="text" class="form__input">
                             </label>
                             
                                 <label class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input input-error">
+                                    <input type="text" class="form__input">
                                 </label>
                         
                                 <label class="form__block">
                                         <div class="form__title">Этаж</div>
-                                        <input type="text" class="form__input input-error">
+                                        <input type="text" class="form__input">
                                     </label>
                             </div>
                         
@@ -609,7 +624,7 @@
                     <div class="form__row form__row--comment">
                         <label class="form__block">
                             <div class="form__title">Комментарий</div>
-                            <textarea class="form__input form__input--textarea input-error"
+                            <textarea class="form__input form__input--textarea"
                             name="comment"></textarea>
                         </label>
                     </div>
@@ -733,7 +748,16 @@
             <div class="modal__content">
                 Сообщение отправлено
             </div>
-            <button type="button" class="button app-submit-button">Заказать</button>
+            <button type="button" class="button app-submit-button">Закрыть</button>
+        </div>
+    </div>
+
+    <div id="modal" class="modal modal-error">
+        <div class="modal__container">
+            <div class="modal__content modal__content-error">
+                Отправить запрос не удалось,повторите позже
+            </div>
+            <button type="button" class="button app-submit-button">Закрыть</button>
         </div>
     </div>
 </body>

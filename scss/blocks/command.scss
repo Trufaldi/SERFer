@@ -3,6 +3,20 @@
     align-items: flex-start;
 }
 
+.command__team--dekstop {
+    @include tablets {
+        display: none;
+    }
+}
+
+.command__team--mobile {
+    display: none;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .command__person-photo {
     width: rem(220px);
     height: rem(290px);
@@ -36,18 +50,33 @@
     }
 }
 
+.command__person-name .active {
+    &:after {
+        content: "";
+        width: rem(9px);
+        height: rem(9px);
+        background: url(../img/symbol.png) center center / cover no-repeat;
+        margin-left: rem(4px);
+        transform: rotate(180deg);
+    }
+}
+
 .command__person-specification {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 0;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
 
 .command__person-block {
     position: absolute;
-    top: 100%;
+    top: 0;
+    @include tablets {
+        position: fixed;
+    }
 }
 
 .command__person-proffe {
@@ -59,10 +88,9 @@
     color: #666666;
 }
 
-.command__team--mobile {
-    display: none;
-}
-
+// .command__team--mobile {
+//     display: none;
+// }
 .command__person-block {
     text-align: center;
 }
