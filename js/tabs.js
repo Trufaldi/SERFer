@@ -3,7 +3,8 @@
 // function findBlockByAlias (alias) {
 // функция найтиБлокПоПсевдониму (псевдоним)
 const findBlockByAlias = alias => {
-    return $(".user__rewiew").filter((ndx, item) => { // вернуть  $(".user__rewiev") .отзывы.отфильтровать(номер, отзыв) => {
+    // вернуть  $(".user__rewiev") .отзывы.отфильтровать(номер, отзыв) => {
+    return $(".user__rewiew").filter((ndx, item) => {
         //вернуть отзыв у которого значение атрибута data-linked-with РАВНО переданному псведониму
         // <li class="user__rewiew user__rewiew--active" data-linked-with="one">
         // вернуть $(отзыв).атрибут("data-linked-with") === псевдоним
