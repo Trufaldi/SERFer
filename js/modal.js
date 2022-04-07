@@ -72,7 +72,7 @@ $(".form").submit(e => {
 
                 }
 
-            });
+            );
 
         $(".app-submit-button").click(e => {
             e.preventDefault();

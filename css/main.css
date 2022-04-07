@@ -1859,6 +1859,9 @@ form {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1866,6 +1869,17 @@ form {
   width: 12.2222222222rem;
   height: 16.1111111111rem;
   margin-bottom: 1.1666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .command__person-photo {
+    margin: 0 auto 1.1666666667rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .command__person-photo {
+    width: 7.6666666667rem;
+    height: 10rem;
+  }
 }
 
 .command__person {
@@ -1883,6 +1897,15 @@ form {
 }
 .command__person:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .command__person {
+    margin-right: 0;
+  }
+}
+.command__person.active .command__person-name:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .command__person-name {
@@ -1934,12 +1957,13 @@ form {
 }
 
 .command__person-block {
+  text-align: center;
   position: absolute;
   top: 0;
 }
 @media screen and (max-width: 768px) {
   .command__person-block {
-    position: fixed;
+    position: static;
   }
 }
 
@@ -1950,15 +1974,20 @@ form {
 .command__person-description {
   text-align: center;
   color: #666666;
+  padding-bottom: 0.5555555556rem;
 }
 
-.command__person-block {
-  text-align: center;
+.command__person-pic {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .fancybox-is-open .fancybox-bg {
   background: #313131;
-  opacity: 0.1;
+  opacity: 1;
 }
 
 .modal__container {
@@ -1987,9 +2016,10 @@ form {
 
 .modal {
   display: none;
+  padding: 0;
 }
 
-.modal__content-error {
+.modal-error {
   color: red;
 }
 /*# sourceMappingURL=main.css.map */

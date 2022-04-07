@@ -1,6 +1,6 @@
 .fancybox-is-open .fancybox-bg {
     background: #313131;
-    opacity: 0.1;
+    opacity: 1;
 }
 
 .modal__container {
@@ -22,8 +22,9 @@
 
 .modal {
     display: none;
+    padding: 0;
 }
 
-.modal__content-error {
+.modal-error {
     color: red;
 }
