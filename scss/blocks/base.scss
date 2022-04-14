@@ -1,4 +1,5 @@
 html {
+    height: 100%;
     font-size: $baseFontSize;
     @include phone {
         font-size: 3.75vmin;
@@ -30,7 +31,17 @@ p {
     margin: 0;
 }
 
-.wrapper {}
+.wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.maincontent {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+}
 
 ul,
 li {

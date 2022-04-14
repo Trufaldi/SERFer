@@ -1,0 +1,47 @@
+.product-menu-section {
+    background: url("../img/menu.png") center center/cover no-repeat;
+    position: relative;
+    color: white;
+}
+
+.product-menu {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.product-menu__item {
+    display: block;
+}
+
+.product-menu__button {
+    display: block;
+}
+
+.product-menu__content {
+    background: rgba(18, 19, 20, 0.8);
+    width: 0;
+    overflow: hidden;
+    transition: max-width 0.3s linear;
+}
+
+.product-menu__title {
+    color: inherit;
+    position: relative;
+    min-width: rem(102px);
+    // background: ;
+}
+
+.product-menu__button--longbord {
+    background: url("../img/slide1.png") center center/cover no-repeat;
+}
+
+.product-menu__button--shortbord {
+    background: url("../img/slide2.png") center center/cover no-repeat;
+}
+
+.product-menu__button--softtop {
+    background: url("../img/slide3.png") center center/cover no-repeat;
+}
